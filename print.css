@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    text-align: center;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label{
+    color: red;
+}
+
+input[type=number] {
+    border: 1px solid black;
+    margin: 0;
+}
+
+#fieldBoxes {
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#fieldBoxes label {
+    width: 25%;
+    border: 2px solid black;
+
+}
+
+#PI { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 5vh;
+    text-align: center;
+}
+
+#PI > label {
+    width: 10%;
+    text-align: center;
+}
+
+.entranceTestGrid {
+    border: 1px solid black;
+    width: calc(100%/3);
+}
+
+.objTestGrid {
+    border: 1px solid black;
+    margin: 0px;
+    width: calc(100%/3);
+}
+
+.subTestGrid {
+    border: 1px solid black;
+    margin: 0px;
+    width: calc(100%/9);
+}
+
+#prescription {
+    display: flex;
+    flex-direction: row;
+}
+
+.prescriptionGrid {
+    border: 1px solid black;
+    margin: 0px;
+    width: calc(100%/2);
+}
+
+#PI > input {
+    width: 40%;
+}
+
+fieldset {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.clearBtn {
+    width: 100%;
+}
+
+#ROPBtn {
+    width: 100%;
+}
+
+#submitBtn {
+    width: 100%;
+}
+
+@page {
+    header nav, footer {
+        display: none;
+        }
+    size: A5;
+}

@@ -82,7 +82,7 @@ const addForm = (() => {
     submitBtn.id = 'submitBtn';
     
     form.setAttribute('method','post');
-    form.setAttribute('action','https://script.google.com/macros/s/AKfycbyDoaOkNIBoeGc0bAB6eso0FyEkuirxiTT4K5Yykhk/dev')
+    form.setAttribute('action','https://script.google.com/macros/s/AKfycbyDoaOkNIBoeGc0bAB6eso0FyEkuirxiTT4K5Yykhk/dev');
     submitBtn.setAttribute('type','submit')
     submitBtn.innerHTML= 'submit';
     
@@ -104,6 +104,7 @@ const addForm = (() => {
     createInput(PI,'text','PID','PID');
     createInput(PI,'date','DOB','DOB');
 
+    createDIV(entranceTest,'legend','Entrance Test','entranceLegend');
     createDIV(entranceTest,'div','','blankGrid','class:entranceTestGrid');
     createDIV(entranceTest,'div','scVA','scVA','class:entranceTestGrid');
     createDIV(entranceTest,'div','ccVA','ccVA','class:entranceTestGrid');
@@ -114,9 +115,10 @@ const addForm = (() => {
     createInput(entranceTest,'number','scLEVA','scLEVA','class:entranceTestGrid','step:0.5');
     createInput(entranceTest,'number','ccLEVA','ccLEVA','class:entranceTestGrid','step:0.5');
     
+    createDIV(objectiveTesting,'legend','Objective Test','objectiveLegend');
     createDIV(objectiveTesting,'div','','blankGrid','class:objTestGrid');
-    createDIV(objectiveTesting,'div','Nondillated','blankGrid','class:objTestGrid');
-    createDIV(objectiveTesting,'div','dillated','blankGrid','class:objTestGrid');
+    createDIV(objectiveTesting,'div','Nondillated','Nondillated','class:objTestGrid');
+    createDIV(objectiveTesting,'div','Dillated','Dillated','class:objTestGrid');
     createDIV(objectiveTesting,'div','RE','RE','class:objTestGrid');
     createInput(objectiveTesting,'text','rSKiasNondil','rSKiasNondil','class:objTestGrid');
     createInput(objectiveTesting,'text','rSKiasdil','rSKiasdil','class:objTestGrid');
@@ -124,6 +126,8 @@ const addForm = (() => {
     createInput(objectiveTesting,'text','lSKiasNondil','lSKiasNondil','class:objTestGrid');
     createInput(objectiveTesting,'text','lSKiasdil','lSKiasdil','class:objTestGrid');
 
+
+    createDIV(subjectiveTesting,'legend','Subjective Test','subjectiveLegend');
     createDIV(subjectiveTesting,'div','','blankGrid','class:subTestGrid');
     createDIV(subjectiveTesting,'div','Sph','Sph','class:subTestGrid');
     createDIV(subjectiveTesting,'div','Cyl','Cyl','class:subTestGrid');
@@ -152,6 +156,7 @@ const addForm = (() => {
     createInput(subjectiveTesting,'number','lnVA','lnVA','class:subTestGrid','step:0.25');
     createInput(subjectiveTesting,'number','lMEM','lMEM','class:subTestGrid','step:0.25');
     
+    createDIV(prescription,'legend','prescription','prescriptionLegend');
     createDIV(prescription,'div','RE','RE','class:prescriptionGrid');
     createInput(prescription,'text','rPres','rPres','class:prescriptionGrid');
     createDIV(prescription,'div','LE','LE','class:prescriptionGrid');

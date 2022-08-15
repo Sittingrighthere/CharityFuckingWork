@@ -86,7 +86,7 @@ fieldset {
     height: 20vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
 }
 

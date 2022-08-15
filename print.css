@@ -2,109 +2,75 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  overflow: hidden;
+  align-items: center;
+  margin: 0;
 }
 
 body {
     position: relative;
     text-align: center;
     align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
 }
 
-input[type=checkbox] {
+button {
     display: none;
 }
 
-input[type=checkbox]:checked + label{
-    color: red;
+fieldset {
+    display: inline-block;
+    width: 100%;
 }
 
-input[type=number] {
-    border: 1px solid black;
-    margin: 0;
+fieldset > div {
+    display: inline-block;
+}
+
+fieldset > input {
+    display: inline-block;
+    border: 0;
 }
 
 #fieldBoxes {
-    height: 5vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
+    display: none;
 }
 
-#fieldBoxes label {
-    width: 25%;
-    border: 2px solid black;
-
-}
-
-#PI { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 5vh;
-    text-align: center;
-}
-
-#PI > label {
-    width: 10%;
-    text-align: center;
-}
-
-.entranceTestGrid {
-    border: 1px solid black;
+#entranceTest > div {
     width: calc(100%/3);
 }
 
-.objTestGrid {
-    border: 1px solid black;
-    margin: 0px;
+#entranceTest > input {
     width: calc(100%/3);
 }
 
-.subTestGrid {
-    border: 1px solid black;
-    margin: 0px;
+#objectiveTesting > div {
+    width: calc(100%/3);
+}
+
+#objectiveTesting > input {
+    width: calc(100%/3);
+}
+
+#subjectiveTesting > div {
     width: calc(100%/9);
 }
 
-#prescription {
-    display: flex;
-    flex-direction: row;
+#subjectiveTesting > input {
+    width: calc(100%/9);
 }
 
-.prescriptionGrid {
-    border: 1px solid black;
-    margin: 0px;
+#prescription > div {
     width: calc(100%/2);
 }
 
-#PI > input {
-    width: 40%;
-}
-
-fieldset {
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.clearBtn {
-    width: 100%;
-}
-
-#ROPBtn {
-    width: 100%;
-}
-
-#submitBtn {
-    width: 100%;
+#prescription > input {
+    width: calc(100%/2);
 }
 
 @page {
-    header nav, footer {
-        display: none;
-        }
-    size: A5;
+    size: a5;
 }

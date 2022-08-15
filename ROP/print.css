@@ -60,7 +60,7 @@ fieldset > input {
 }
 
 #subjectiveTesting > input {
-    width: calc(100%/9);
+    width: calc(100%/8);
 }
 
 #prescription > div {

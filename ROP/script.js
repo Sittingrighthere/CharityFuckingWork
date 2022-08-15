@@ -96,11 +96,10 @@ const addForm = (() => {
     form.appendChild(prescription);
     form.appendChild(submitBtn);
     
-
-    createInput(fieldBoxes,'checkbox','Thị lực','entranceTestCheck','onclick:checkField("Thị lực","entranceTest")','checked')
+    createInput(fieldBoxes,'checkbox','Thị lực','entranceTestCheck','onclick:checkField("Thị lực","entranceTest")')
     createInput(fieldBoxes,'checkbox','Skiascopy','objectiveTestingCheck','onclick:checkField("Skiascopy","objectiveTesting")','checked')
-    createInput(fieldBoxes,'checkbox','Khúc xạ chủ quan','subjectiveTestingCheck','onclick:checkField("Khúc xạ chủ quan","subjectiveTesting")','checked')
-    createInput(fieldBoxes,'checkbox','Đơn kính','prescriptionCheck','onclick:checkField("Đơn kính","prescription")','checked')
+    createInput(fieldBoxes,'checkbox','Khúc xạ chủ quan','subjectiveTestingCheck','onclick:checkField("Khúc xạ chủ quan","subjectiveTesting")')
+    createInput(fieldBoxes,'checkbox','Đơn kính','prescriptionCheck','onclick:checkField("Đơn kính","prescription")')
 
     createInput(PI,'text','PID','PID');
     createInput(PI,'date','DOB','DOB');

@@ -50,6 +50,14 @@ input[type=number] {
     text-align: center;
 }
 
+#entranceTest {
+    display: none;
+}
+
+#subjectiveTesting {
+    display: none;
+}
+
 .entranceTestGrid {
     border: 1px solid black;
     width: calc(100%/3);
@@ -68,7 +76,7 @@ input[type=number] {
 }
 
 #prescription {
-    display: flex;
+    display: none;
     flex-direction: row;
 }
 
@@ -91,10 +99,6 @@ fieldset {
 }
 
 .clearBtn {
-    width: 100%;
-}
-
-#ROPBtn {
     width: 100%;
 }
 
